@@ -7,6 +7,7 @@ This repository contains configuration to automatically install [Coolify](https:
 - **flightcontrol.json** - Flightcontrol deployment configuration
 - **nixpacks.toml** - Nixpacks build configuration
 - **install-coolify.sh** - Installation script for Coolify
+- **package.json** - Minimal Node.js project file (required for Nixpacks detection)
 
 ## How It Works
 
