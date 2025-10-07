@@ -6,10 +6,10 @@ nixPkgs = ["bash"]
 aptPkgs = ["curl", "wget", "ca-certificates", "gnupg", "lsb-release", "openssh-server", "docker.io"]
 
 [phases.install]
-# No npm install needed, just using package.json for detection
+cmds = ["echo 'Skipping npm install - not needed for this project'"]
 
 [phases.build]
-# No build step needed
+cmds = ["echo 'No build step needed'"]
 
 [start]
 cmd = "bash install-coolify.sh && tail -f /dev/null"
