@@ -23,7 +23,3 @@ fi
 
 echo "Container is ready. Coolify should be accessible on port 80."
 echo "To check logs: docker-compose logs -f coolify"
-
-# Keep container running
-tail -f /dev/null
-
