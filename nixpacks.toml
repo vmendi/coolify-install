@@ -1,0 +1,15 @@
+# Nixpacks configuration for Coolify Installation
+# Ensures necessary packages are available for running Docker and Coolify
+
+[phases.setup]
+nixPkgs = ["bash"]
+aptPkgs = ["curl", "wget", "ca-certificates", "gnupg", "lsb-release", "openssh-server", "docker.io"]
+
+[phases.install]
+# No npm install needed, just using package.json for detection
+
+[phases.build]
+# No build step needed
+
+[start]
+cmd = "bash install-coolify.sh && tail -f /dev/null"

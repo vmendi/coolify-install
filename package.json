@@ -1,0 +1,8 @@
+{
+  "name": "coolify-installer",
+  "version": "1.0.0",
+  "description": "Coolify installation script for Flightcontrol",
+  "scripts": {
+    "start": "bash install-coolify.sh && tail -f /dev/null"
+  }
+}
